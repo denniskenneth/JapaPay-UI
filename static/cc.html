@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JapaPay - Credit/Debit Card</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="../styles.css">
+  <link rel="shortcut icon" href="../assest/JP.png" type="image/x-icon">
+
+</head>
+<body>
+	<div style="display: flex; justify-content: space-between;"  id="back">
+    <a href="../index.html">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="./cancel.html">
+      <i  class="fas fa-times"></i>
+    </a>
+  </div>
+
+
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <a style="text-decoration: none;" href="../index.html">
+        <p>JP</p>
+      </a>
+    </div>
+    
+    
+    <h2>JPayment Gateway</h2>
+    <div class="ttl-pay">
+      <p>Amount to be paid:</p>
+      <p>¢150</p>
+    </div>
+    <form id="form" class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card holder:</label>
+        <input type="text" class="input" placeholder="Full Name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card Number" required>
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry date:</label>
+          <input type="text" name="expiry-data" class="input" pattern="(?:0[1-9]|1[0-2])/[0-9]{2}"  placeholder="00 / 00" required>
+          <i class="far fa-calendar-alt"></i>
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVC:</label>
+          <input type="text" class="input" pattern="[0-9]{3}" placeholder="000" required>
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+        
+      <div class="btnDiv">
+        <button id="pay-btn" type="submit" class="cc btn">
+          Pay
+        </button>
+      </div>
+      <div id="or-line">
+        <hr>
+      </div>
+
+      <div id="other-pay" style="padding: 12px; background: #000; " class="btn">Mobile Money</div>
+      
+    </form>
+  </div>
+</div>
+  <script src="../js/momo.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>

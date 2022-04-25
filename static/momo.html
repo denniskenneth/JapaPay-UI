@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JapaPay - Mobile Money</title>
+  <link rel="shortcut icon" href="../assest/JP.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="../styles.css">
+
+</head>
+<body>
+	<div style="display: flex; justify-content: space-between;"  id="back">
+    <a href="../index.html">
+      <i class="fa fa-arrow-left"></i>
+    </a>
+    <a href="./cancel.html">
+      <i  class="fas fa-times"></i>
+    </a>
+  </div>
+
+
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <a style="text-decoration: none;" href="../index.html">
+        <p>JP</p>
+      </a>
+    </div>
+    
+    
+    <h2>JapaPay Gateway</h2>
+      <div class="ttl-pay">
+        <p>Amount to be paid:</p>
+        <p>¢150</p>
+      </div>
+    <form id="form" class="form">
+      <div class="card space icon-relative">
+        <label class="label">Card Owner:</label>
+        <input type="text" class="input" placeholder="Full Name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Phone Number:</label>
+        <input type="tel" class="input"  placeholder="020 099 4772" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+        <i class="fas fa-phone"></i>
+      </div>
+      
+      
+      <div class="btnDiv">
+        <button type="submit" id="pay-btn"  class="cc btn">
+          Pay
+        </button>
+      </div>
+
+      <div id="or-line">
+        <hr>
+      </div>
+
+      <div id="other-pay" style="padding: 12px; background: #000; " class="btn">Credit Card</div>
+       
+      
+    </form>
+  </div>
+</div>
+  <script src="../js/momo.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  /* align-content: center; */
+  /* height: 800px; */
+}
+
+div.holder {
+  margin: auto;
+  width: 25em;
+  height: 15em;
+  /* border: 3px solid #73ad21; */
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  text-align: center;
+  border-radius: 10%;
+}
+
+div.holder img#confirm-image {
+  width: 40%;
+  height: 80%;
+  color: blue;
+  margin: 0 auto;
+  padding: 15px 5px;
+  /* background-color: white; */
+}
+
+div.holder p {
+  font-size: 30px;
+}

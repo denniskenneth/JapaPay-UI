@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JapaPay - Payment Method</title>
+    <link rel="shortcut icon" href="../assest/JP.png" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="payment">
+        <div class="payment-logo">
+          <a style="text-decoration: none;" href="../index.html">
+            <p>JP</p>
+          </a>
+        </div>
+
+        <h2>JapaPay Gateway</h2>
+        <div class="ttl-pay">
+          <p>Amount to be paid:</p>
+          <p>¢150</p>
+        </div>
+        <div class="form">
+          <h3>Payment Method:</h3>
+          <div class="payment-method">
+            <input type="radio" class="py-mthd" id="momo" name="payment-mthd" value="momo"/> 
+            <label class="label payment-method" for="momo">Mobile Money</label>
+            <i class="fas fa-money-bill" ></i>
+           </div>
+            
+           <div class="payment-method">
+            <input type="radio" class="py-mthd" id="credit-card" name="payment-mthd" value="cc"/>
+            <label class="label payment-method" for="credit-card">Credit/Debit Card</label>
+            <i class="fas fa-credit-card" ></i>
+          </div>
+
+          <div id="btn" class="btn">Next</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+  </body>
+</html>
